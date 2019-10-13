@@ -12,7 +12,7 @@ setmetatable(Timer, {
   end,
 })
 
-function Timer.init(time) 
+function Timer.init(time)
   if not Timer._init then
     Timer._init = true
     Timer._clock = time
@@ -53,21 +53,48 @@ end
 
 --[[Getters]]
 function Timer:getId() return self.id end
+function Timer:getTimeout() return self.timeout end
+function Timer:isLooping() return self.loop end
 function Timer:getMatureTime() return self.mature end
 function Timer:isAlive() return self.alive end
 
-function Timer:reset()
-  self.mature = Timer._clock + self.timeout
+--[[Setters]]
+function Timer:setCallback(func)
+    self.call = func
 end
+
+function Timer:addTime(time)
+    self.mature = self.mature + time
+end
+
+function Timer:setLoop(loop)
+    self.loop = loop
+end
+
+function Timer:setArgs(...)
+    self.args = ...
+end
+
+--[[Instance methods]]
+
+function Timer:call()
+    self.call(self.args)
+end
+
 
 function Timer:kill()
   self.alive = false
   self = nil
 end
 
+function Timer:reset()
+  self.mature = Timer._clock + self.timeout
+end
+
 --[[Testing]]
 
-local timer1 = Timer("timer1", function(name) print("Hello " .. name) end, 2000, true, "seniru")
+local i = false;
+local timer1 = Timer("timer1", function(name) i = true print(i) end, 5000, true, "seniru")
 
 function eventLoop(tc, tr)
   Timer.run(tc)
