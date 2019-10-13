@@ -1,5 +1,3 @@
-tfm.exec.newGame(0)
-
 local Timer = {}
 Timer.__index = Timer
 Timer._timers = {}
