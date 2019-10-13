@@ -90,12 +90,3 @@ end
 function Timer:reset()
   self.mature = Timer._clock + self.timeout
 end
-
---[[Testing]]
-
-local i = false;
-local timer1 = Timer("timer1", function(name) i = true print(i) end, 5000, true, "seniru")
-
-function eventLoop(tc, tr)
-  Timer.run(tc)
-end
