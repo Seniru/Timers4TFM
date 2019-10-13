@@ -9,7 +9,7 @@
 
 **This is a library which provides easy and advanced timers for module developers.**
 
-This project is inspired by [mk's timer library](https://atelier801.com/topic?f=6&t=875052), so make sure to support that also :love:
+This project is inspired by [mk's timer library](https://atelier801.com/topic?f=6&t=875052), so make sure to support that also :heart:
 
 ***Background***
 
