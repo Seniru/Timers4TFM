@@ -1,3 +1,9 @@
+--[[
+  @author: Seniru Pasan
+  @license: Apache-2.0
+  An advanced timer library for all module developers in transformice
+]]
+
 local Timer = {}
 Timer.__index = Timer
 Timer._timers = {}
