@@ -1,0 +1,31 @@
+{
+  "name": "timers-4-tfm",
+  "version": "1.0.0",
+  "description": "Advanced timers for lua module developers",
+  "main": "build.js",
+  "dependencies": {
+    "luamin": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seniru/Timers4TFM.git"
+  },
+  "keywords": [
+    "lua",
+    "transformice",
+    "module",
+    "library",
+    "timer"
+  ],
+  "author": "Seniru Pasan",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Seniru/Timers4TFM/issues"
+  },
+  "homepage": "https://github.com/Seniru/Timers4TFM#readme"
+}
