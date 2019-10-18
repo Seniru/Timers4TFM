@@ -1,0 +1,670 @@
+
+                <html>
+                    <head>
+                        <meta charset="utf-8">
+                        <title>timer.lua</title>
+                        <style>
+                            @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 25px;
+    background-color: #efefef;
+}
+
+body * {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: #585858;
+}
+
+.documentationWrap {
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 2px rgba(171, 171, 171, 0.34);
+}
+
+.file {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #2a8ec7;
+}
+
+.file .fileTitle {
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: #ff940f;
+}
+
+.file .fileTitle div {
+    font-size: 20px;
+    color: #fff;
+}
+
+.file .contentList {
+    padding: 25px;
+    padding-bottom: 0;
+}
+
+.file .contentList > div {
+    margin-bottom: 45px;
+}
+
+.file .contentList > div:last-child {
+    margin-bottom: 0;
+}
+
+.file .contentList > .item {
+
+}
+
+.file .contentList > .item .name {
+    cursor: default;
+}
+
+.file .contentList > .item .top {
+    display: table;
+}
+
+.file .contentList > .item .top > div{
+    display: table-cell;
+}
+
+.file .contentList > .item .top .name{
+    min-width: 200px;
+    max-width: 400px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.file .contentList > .item .name .empty_name {
+    background-color: #ffc4c4;
+}
+
+.file .contentList > .item .description{
+    margin-top: 10px;
+}
+
+.file .contentList > .item .description .brief {
+    text-indent: 10px;
+}
+
+.file .contentList > .item .description .full {
+    margin-top: 10px;
+    text-indent: 10px;
+}
+
+.file .contentList > .item .params {
+    display: table;
+    margin-top: 7px;
+    padding-left: 25px;
+}
+
+.file .contentList > .item .params .item {
+    margin-bottom: 7px;
+}
+
+.file .contentList > .item .params .item > div{
+    display: table-cell;
+}
+
+.file .contentList > .item .params .name {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.file .contentList > .item .params .param-name {
+    background: #f1f1f1;
+    padding: 0 3px;
+}
+
+.file .contentList > .item .params .param-type {
+    margin-left: 10px;
+    color: #0b820a;
+}
+
+.file .contentList > .item .return {
+    display: table;
+    padding-left: 25px;
+}
+
+.file .contentList > .item .return > div{
+    display: table-cell;
+}
+
+.file .contentList > .item .return .return-type {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.file .contentList > .item .return .return-title {
+    background: #d6ecff;
+    padding: 0 3px;
+}
+
+.file .contentList > .item .return .return-type-title {
+    margin-left: 10px;
+    color: #0b820a;
+}
+
+.back {
+    margin-bottom: 10px;
+}
+
+.back a {
+    text-decoration: underline;
+}
+
+/* List files on main page */
+.list-files {
+
+}
+
+.list-files > .file-item {
+    outline: 1px solid rgba(255, 148, 15, 0.2);
+    margin-bottom: 20px;
+}
+
+.list-files > .file-item a {
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list-files > .file-item:hover {
+    background-color: #ff940f;
+}
+
+.list-files > .file-item:hover a {
+    color: #fff;
+}
+
+#powered-by {
+    text-align: right;
+}
+
+#powered-by a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#powered-by a .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+#powered-by span {
+    padding-right: 5px;
+}
+
+#powered-by img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+                        </style>
+                       </head>
+                    <body>
+                        <div class="documentationWrap">
+                
+                           <div class="back">
+                                <a href="../index.html">Back</a>
+                           </div>
+                           <div class="file">
+                                <div class="fileTitle">
+                                    <div>./src/timer.lua</div>
+                                </div>
+                           <div class="contentList">
+                            <div class="item">
+                    <div class="top">
+                        <div class="name">Timer</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            The class which holds all the properties and methods related to Timers
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer.init(time)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">time</span><span class="param-type">number</span>
+                                </div>
+                                <div class="description">
+                                    Number of milliseconds from start
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Initializes all the timers and the clock
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer.process(tc)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">tc</span><span class="param-type">number</span>
+                                </div>
+                                <div class="description">
+                                    Number of milliseconds from start
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Processes all the timers
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer.run(tc)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">tc</span><span class="param-type">number</span>
+                                </div>
+                                <div class="description">
+                                    Number of milliseconds from start
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Shorthand method to include both #init and #process methods
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer.new(id, callback, timeout, loop, ...)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">id</span><span class="param-type">any</span>
+                                </div>
+                                <div class="description">
+                                    The ID of the timer.
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">callback</span><span class="param-type">function</span>
+                                </div>
+                                <div class="description">
+                                    The function to be called after timeout
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">timeout</span><span class="param-type">number</span>
+                                </div>
+                                <div class="description">
+                                    Number of milliseconds for the mature
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">loop</span><span class="param-type">boolean</span>
+                                </div>
+                                <div class="description">
+                                    Sets the timers looping function. If <i>true</i> runs again after mature.
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">...</span><span class="param-type">any</span>
+                                </div>
+                                <div class="description">
+                                    This is a vararg. These varagrs are used to call the callback
+                                </div>
+                            </div>
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">Timer</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        A new timer    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Creates a new timer with given properties
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:getId()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">any</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        The timer's ID    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Returns the timer's ID
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:getTimeout()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">number</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        Number of milliseconds for timeout    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Returns the timeout milliseconds
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:isLooping()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">boolean</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        The looping status    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Returns the looping status of the timer
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:getMatureTime()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">number</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        Time by which the timer get matured    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Returns the maturing time of the timer
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:isAlive()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                               <div class="return">
+                                    <div class="return-type">
+                                        <span class="return-title">Return</span>
+                                        <span class="return-type-title">boolean</span>
+                                    </div>
+                                    <div class="return-desc">
+                                        The timers living status    
+                                    </div>
+                                </div>
+                             
+                    <div class="description">
+                        <div class="brief">
+                            Returns the timers life status
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:setCallback(func)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">func</span><span class="param-type">function</span>
+                                </div>
+                                <div class="description">
+                                    The new function
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Changes the callback with the new function provided
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:addTime(time)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">time</span><span class="param-type">number</span>
+                                </div>
+                                <div class="description">
+                                    Milliseconds to be added
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Adds more time for maturing
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:setLoop(loop)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">loop</span><span class="param-type">boolean</span>
+                                </div>
+                                <div class="description">
+                                    The loop status of the timer
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Sets the loop status of the timer
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:setArgs(...)</div>
+                    </div>
+                    <div class="params">
+                        
+                            <div class="item">
+                                <div class="name">
+                                    <span class="param-name">...</span><span class="param-type">any</span>
+                                </div>
+                                <div class="description">
+                                    Varargs that to be passed to the callback
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Passese the new parameter for the callback function
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:call()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Calls the timer prematurely or after the mature
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:kill()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Kills the timer
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div><div class="item">
+                    <div class="top">
+                        <div class="name">Timer:reset()</div>
+                    </div>
+                    <div class="params">
+                        
+                    </div>
+                    
+                    <div class="description">
+                        <div class="brief">
+                            Resets the timer
+                        </div>
+                        <div class="full">
+                                                    
+                        </div>
+                    </div>
+                </div></div></div>
+                        </div>
+                        <div id="powered-by">
+                            <a href="http://metal-evolution.com/" target="_blank">
+                                <div class="wrap">
+                                    <span>Powered by ©MetalEvolutionStudio</span>
+                                    <img src="http://metal-evolution.com/global-assets/images/mes-logo.png" alt="©MetalEvolutionStudio">
+                                </div>
+                            </a>
+                        </div>
+                    </body>
+                </html>
+                
