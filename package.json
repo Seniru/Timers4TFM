@@ -4,12 +4,14 @@
   "description": "Advanced timers for lua module developers",
   "main": "build.js",
   "dependencies": {
+    "luadoc": "^1.0.10",
     "luamin": "^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build": "node tools/build.js",
+    "make:docs": "rm -r docs | node tools/docs.js && mv src/docs ."
   },
   "repository": {
     "type": "git",
