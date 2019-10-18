@@ -47,6 +47,8 @@ end
 
 ```
 
+[Documentation](https://seniru.github.io/Timers4TFM/docs/src/1.html)
+
 ### Creating timers with callbacks
 
 ```lua
@@ -67,6 +69,7 @@ end
 --Run this code to see the results!
 
 ```
+[Documentation](https://seniru.github.io/Timers4TFM/docs/src/1.html)
 
 ### Looping timers
 
@@ -78,9 +81,8 @@ Timer("looping", function() print("prints") end, 3000, true)
 ```
 
 
-*That's it! You can read more in the documentation*
+[Documentation](https://seniru.github.io/Timers4TFM/docs/src/1.html)
 
-<!--TODO: Create documentation and link it to 'documentation'-->
 
 
 # Contributing
