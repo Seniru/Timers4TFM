@@ -29,6 +29,10 @@ Since normal players - who aren't module members are not allowed to use tfm modu
 
 In order to use this library you need to insert this libraries code in top of your code.
 
+[Use the full code *(Recommended for studying)*](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.lua) | [Use the minified version *(Recommended for production use)*](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.min.lua)
+
+<hr>
+
 ## Examples
 
 #### Creating new timer
