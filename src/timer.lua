@@ -18,7 +18,7 @@ Timer._clock = 0
 setmetatable(Timer, {
   __call = function (cls, ...)
     return cls.new(...)
-  end,
+  end
 })
 
 --[====[
@@ -46,7 +46,7 @@ function Timer.process(tc)
   Timer._clock = tc
   for k, v in next, Timer._timers do
     if v:isAlive() and v:getMatureTime() <= Timer._clock then
-      v.call(v.args)
+      v:call()
       if v.loop then
         v:reset()
       else
@@ -81,11 +81,11 @@ end
 function Timer.new(id, callback, timeout, loop, ...)
   local self = setmetatable({}, Timer)
   self.id = id
-  self.call = callback
+  self.callback = callback
   self.timeout = timeout
   self.mature = Timer._clock + timeout
   self.loop = loop
-  self.args = ...
+  self.args = { ... }
   self.alive = true
   Timer._timers[id] = self
   return self
@@ -143,7 +143,7 @@ function Timer:isAlive() return self.alive end
     @brief Changes the callback with the new function provided
 --]====]
 function Timer:setCallback(func)
-    self.call = func
+    self.callback = func
 end
 
 --[====[
@@ -173,7 +173,7 @@ end
     @brief Passese the new parameter for the callback function
 --]====]
 function Timer:setArgs(...)
-    self.args = ...
+    self.args = { ... }
 end
 
 --[[Instance methods]]
@@ -184,7 +184,7 @@ end
     @brief Calls the timer prematurely or after the mature
 --]====]
 function Timer:call()
-    self.call(self.args)
+    self.callback(table.unpack(self.args))
 end
 
 --[====[
