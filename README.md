@@ -1,6 +1,6 @@
 # Timers4TFM
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 ![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29)
 [![Actions Status](https://github.com/Seniru/Timers4TFM/workflows/Build/badge.svg)](https://github.com/Seniru/Timers4TFM/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -141,6 +141,7 @@ Thanks goes to these wonderful people
     <td align="center"><a href="https://github.com/Seniru"><img src="https://avatars2.githubusercontent.com/u/34127015?v=4" width="100px;" alt="Seniru Pasan Indira"/><br /><sub><b>Seniru Pasan Indira</b></sub></a><br /><a href="https://github.com/Seniru/Timers4TFM/commits?author=Seniru" title="Code">💻</a></td>
     <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt="All Contributors"/><br /><sub><b>All Contributors</b></sub></a><br /><a href="#infra-all-contributors" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://bit.ly/laut-id"><img src="https://avatars2.githubusercontent.com/u/26045253?v=4" width="100px;" alt="Lautenschlager"/><br /><sub><b>Lautenschlager</b></sub></a><br /><a href="https://github.com/Seniru/Timers4TFM/commits?author=Lautenschlager-id" title="Code">💻</a> <a href="https://github.com/Seniru/Timers4TFM/issues?q=author%3ALautenschlager-id" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/Tocutoeltuco"><img src="https://avatars2.githubusercontent.com/u/24902450?v=4" width="100px;" alt="Iván"/><br /><sub><b>Iván</b></sub></a><br /><a href="https://github.com/Seniru/Timers4TFM/issues?q=author%3ATocutoeltuco" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
