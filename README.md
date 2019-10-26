@@ -1,21 +1,32 @@
 # Timers4TFM
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors) ![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29) [![Actions Status](https://github.com/Seniru/Timers4TFM/workflows/Build/badge.svg)](https://github.com/Seniru/Timers4TFM/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Seniru/Timers4TFM?include_prereleases)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29)
+[![Actions Status](https://github.com/Seniru/Timers4TFM/workflows/Build/badge.svg)](https://github.com/Seniru/Timers4TFM/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Seniru/Timers4TFM?include_prereleases)
 
 > A library which provides easy and advanced timers for module developers
 
-> :warning: This library is still in beta phase. Use at your own risk! Contributions are always welcome
+> :warning: This library is still in beta phase. Use at your own risk!
+> Contributions are always welcome
 
 ## What is this?
 
-**This is a library which provides easy and advanced timers for module developers.**
+**This is a library which provides easy and advanced timers for module
+developers.**
 
-This project is inspired by [mk's timer library](https://atelier801.com/topic?f=6&t=875052), so make sure to support that also :heart:
+This project is inspired by
+[mk's timer library](https://atelier801.com/topic?f=6&t=875052), so make sure to
+support that also :heart:
 
-***Background***
+**_Background_**
 
-Since normal players - who aren't module members are not allowed to use tfm module apis timers (`system.newTimer` and `system.removeTimer`) I decided to create a brand new and an advanced timer system for all!
+Since normal players - who aren't module members are not allowed to use tfm
+module apis timers (`system.newTimer` and `system.removeTimer`) I decided to
+create a brand new and an advanced timer system for all!
 
-***There are many capabilities for these timers***
+**_There are many capabilities for these timers_**
 
 - Create timers
 - Reset timers
@@ -24,12 +35,14 @@ Since normal players - who aren't module members are not allowed to use tfm modu
 - Execute functions after/before mature
 - And more!
 
-
 ## How to use?
 
-In order to use this library you need to insert this libraries code in top of your code.
+In order to use this library you need to insert this libraries code in top of
+your code.
 
-[Use the full code *(Recommended for studying)*](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.lua) | [Use the minified version *(Recommended for production use)*](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.min.lua)
+[Use the full code _(Recommended for studying)_](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.lua)
+|
+[Use the minified version _(Recommended for production use)_](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.min.lua)
 
 <hr>
 
@@ -73,6 +86,7 @@ end
 --Run this code to see the results!
 
 ```
+
 [Documentation](https://seniru.github.io/Timers4TFM/docs/src/1.html)
 
 ### Looping timers
@@ -84,14 +98,12 @@ Timer("looping", function() print("prints") end, 3000, true)
 
 ```
 
-
 [Documentation](https://seniru.github.io/Timers4TFM/docs/src/1.html)
-
-
 
 # Contributing
 
-Do you want to contribute this project? Great! There are many way that you can involve in this work
+Do you want to contribute this project? Great! There are many way that you can
+involve in this work
 
 <details>
     <summary>Creating issues</summary>
@@ -114,11 +126,13 @@ Do you want to contribute this project? Great! There are many way that you can i
     </ul>
 </details>
 
-Please, make sure that you have searched well before creating a new issue or a pull request. I'm actively responding to all kind of contributions :smile:
+Please, make sure that you have searched well before creating a new issue or a
+pull request. I'm actively responding to all kind of contributions :smile:
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
@@ -132,4 +146,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
