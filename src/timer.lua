@@ -184,7 +184,7 @@ end
     @brief Calls the timer prematurely or after the mature
 --]====]
 function Timer:call()
-    self.call(table.unpack(self.args))
+    self.callback(table.unpack(self.args))
 end
 
 --[====[
