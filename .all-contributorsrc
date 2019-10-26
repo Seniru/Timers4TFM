@@ -32,6 +32,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "Tocutoeltuco",
+      "name": "Iván",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/24902450?v=4",
+      "profile": "https://github.com/Tocutoeltuco",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
