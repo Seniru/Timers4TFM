@@ -12,8 +12,8 @@ coroutine.wrap(function()
         print('Answering topic')
 
         client.answerTopic("Testing fromage. Delete this message", {
-            f = enums.forum.transformice,
-            t = 885034
+            f = enums.forum.atelier801,
+            t = 902724 --885034
         })
 
     end
