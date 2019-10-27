@@ -1,0 +1,20 @@
+name: Post new release
+
+on: [release]
+
+jobs:
+  set-up:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install dependencies
+      
+      run: |
+        curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
+        lit install Lautenschlager-id/fromage
+
+    - name: post-message
+      run: |
+        ./luvit bot.lua Mouseclick1#0000 ${{ secrets.FORUM_PASSWORD }}
