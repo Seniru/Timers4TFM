@@ -13,7 +13,7 @@ jobs:
       
       run: |
         curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
-        lit install Lautenschlager-id/fromage
+        ./lit install Lautenschlager-id/fromage
 
     - name: post-message
       run: |
