@@ -17,4 +17,4 @@ jobs:
 
     - name: post-message
       run: |
-        ./luvit bot.lua Mouseclick1#0000 ${{ secrets.FORUM_PASSWORD }}
+        ./luvit tools/bot.lua Mouseclick1#0000 ${{ secrets.FORUM_PASSWORD }}
