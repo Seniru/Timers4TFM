@@ -1,6 +1,9 @@
-# Timers4TFM
-
-`placeholder for image`
+<p align='center'>
+  
+  <img src='https://user-images.githubusercontent.com/34127015/68472955-b7ee4200-0247-11ea-91b6-6f81b570b31d.png' alt='Timers4TFM'> 
+  <h1>Timers4TFM</h1>
+  
+</p>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 ![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29)
