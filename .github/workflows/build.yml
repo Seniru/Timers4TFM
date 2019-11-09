@@ -20,7 +20,7 @@ jobs:
         npm run make:docs
       env:
         CI: true
-        
+
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
