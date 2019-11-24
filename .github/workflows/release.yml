@@ -1,6 +1,7 @@
 name: Post new release
 
-on: [release]
+on:
+  release: [published]
 
 jobs:
   set-up:
