@@ -1,7 +1,8 @@
 name: Post new release
 
 on:
-  release: [published]
+  release:
+    types: [published]
 
 jobs:
   set-up:
