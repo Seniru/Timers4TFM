@@ -6,11 +6,11 @@
 </p>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29)
-[![Actions Status](https://github.com/Seniru/Timers4TFM/workflows/Build/badge.svg)](https://github.com/Seniru/Timers4TFM/actions)
-[![CodeFactor](https://www.codefactor.io/repository/github/seniru/timers4tfm/badge/master)](https://www.codefactor.io/repository/github/seniru/timers4tfm/overview/master)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Seniru/Timers4TFM?include_prereleases)
+![GitHub file size in bytes](https://img.shields.io/github/size/Seniru/Timers4TFM/src/timer.min.lua?label=Code%20size%20%28minified%29&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Seniru/Timers4TFM/Build?logo=github&style=flat-square)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Seniru/Timers4TFM?logo=codefactor&style=flat-square)
+![GitHub](https://img.shields.io/github/license/Seniru/Timers4TFM?style=flat-square)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Seniru/Timers4TFM?include_prereleases&style=flat-square)
 
 > A library which provides easy and advanced timers for module developers
 
