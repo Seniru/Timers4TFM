@@ -1,7 +1,7 @@
 --[[
-  @author: Seniru Pasan
-  @license: Apache-2.0
-  An advanced timer library for all module developers in transformice
+    @author: Seniru Pasan
+    @license: Apache-2.0
+    An advanced timer library for all module developers in transformice
 ]]
 
 --[====[
@@ -16,9 +16,9 @@ Timer._init = false
 Timer._clock = 0
 
 setmetatable(Timer, {
-  __call = function (cls, ...)
-    return cls.new(...)
-  end
+    __call = function (cls, ...)
+        return cls.new(...)
+    end
 })
 
 --[====[
@@ -29,10 +29,10 @@ setmetatable(Timer, {
     @desc Initializes all the timers and the clock. One should call this on each new game (otherwise the timers won't work properly. <br>The <i>time</i> could be passed inside the eventLoop function to be more precise.
 --]====]
 function Timer.init(time)
-  if not Timer._init then
-    Timer._init = true
-    Timer._clock = time
-  end
+    if not Timer._init then
+        Timer._init = true
+        Timer._clock = time
+    end
 end
 
 --[====[
@@ -43,17 +43,17 @@ end
     @desc One should call this inside eventLoop function to work the timers properly
 --]====]
 function Timer.process(tc)
-  Timer._clock = tc
-  for k, v in next, Timer._timers do
-    if v:isAlive() and v:getMatureTime() <= Timer._clock then
-      v:call()
-      if v.loop then
-        v:reset()
-      else
-        v:kill()
-      end
+    Timer._clock = tc
+    for k, v in next, Timer._timers do
+        if v:isAlive() and v:getMatureTime() <= Timer._clock then
+            v:call()
+            if v.loop then
+                v:reset()
+            else
+                v:kill()
+            end
+        end
     end
-  end
 end
 
 --[====[
@@ -63,8 +63,8 @@ end
     @brief Shorthand method to include both #init and #process methods
 --]====]
 function Timer.run(tc)
-  Timer.init(tc)
-  Timer.process(tc)
+    Timer.init(tc)
+    Timer.process(tc)
 end
 
 --[====[
@@ -79,16 +79,16 @@ end
     @brief Creates a new timer with given properties
 --]====]
 function Timer.new(id, callback, timeout, loop, ...)
-  local self = setmetatable({}, Timer)
-  self.id = id
-  self.callback = callback
-  self.timeout = timeout
-  self.mature = Timer._clock + timeout
-  self.loop = loop
-  self.args = { ... }
-  self.alive = true
-  Timer._timers[id] = self
-  return self
+    local self = setmetatable({}, Timer)
+    self.id = id
+    self.callback = callback
+    self.timeout = timeout
+    self.mature = Timer._clock + timeout
+    self.loop = loop
+    self.args = { ... }
+    self.alive = true
+    Timer._timers[id] = self
+    return self
 end
 
 --[[Getters]]
@@ -193,8 +193,8 @@ end
     @brief Kills the timer
 --]====]
 function Timer:kill()
-  self.alive = false
-  self = nil
+    self.alive = false
+    self = nil
 end
 
 --[====[
@@ -204,5 +204,5 @@ end
     @desc Resets the timer. After reseting the mature time would be increased by the timeout provided at the instantiation
 --]====]
 function Timer:reset()
-  self.mature = Timer._clock + self.timeout
+    self.mature = Timer._clock + self.timeout
 end
