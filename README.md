@@ -19,18 +19,17 @@
 
 ## What is this?
 
-**This is a library which provides easy and advanced timers for module
+**A library which provides easy and advanced timers for module
 developers.**
 
 This project is inspired by
-[mk's timer library](https://atelier801.com/topic?f=6&t=875052), so make sure to
-support that also :heart:
+[mk's timer library](https://atelier801.com/topic?f=6&t=875052), make sure to
+support that project too :heart:
 
 **_Background_**
 
-Since normal players - who aren't module members are not allowed to use tfm
-module apis timers (`system.newTimer` and `system.removeTimer`) I decided to
-create a brand new and an advanced timer system for all!
+As normal players - who aren't in module team - aren't allowed to use the Module API's timers (`system.newTimer` and `system.removeTimer`), I decided to
+create a brand new, advanced timer system for the benefit of all!
 
 **_There are many capabilities for these timers_**
 
@@ -43,7 +42,7 @@ create a brand new and an advanced timer system for all!
 
 ## How to use?
 
-In order to use this library you need to insert this libraries code in top of
+To use this library you need to insert this libraries code in top of
 your code.
 
 [Use the full code _(Recommended for studying)_](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.lua)
@@ -59,12 +58,10 @@ your code.
 ```lua
 --insert the library code here
 
-tfm.exec.newGame(0) -- You need to load a new map to use this appropriately
-
 local timer1 = Timer("timer1", function() end, 5000, false) -- Creating a very basic timer with a timeout value of 5000
 
-function eventLoop(tc, tr)
-  Timer.run(tc) -- You need to call this method inside eventLoop to start and process timers
+function eventLoop()
+  Timer.process() -- You need to call this method inside eventLoop to start and process timers
 end
 
 
@@ -85,8 +82,8 @@ end
 
 Timer("callback", greet, 2000, false, "Seniru", true) --setting the callback to our greet function and pass "Seniru" and true as arguments
 
-function eventLoop(tc, tr)
-    Timer.run(tc)
+function eventLoop()
+    Timer.process()
 end
 
 --Run this code to see the results!
@@ -109,11 +106,11 @@ Timer("looping", function() print("prints") end, 3000, true)
 # Contributing
 
 Do you want to contribute this project? Great! There are many way that you can
-involve in this work
+involve!
 
 <details>
     <summary>Creating issues</summary>
-    You can create issues for the following reasons,
+    You can create issues for,
     <ul>
         <li>Something is not working (bug)</li>
         <li>Suggestion / Feature request</li>
@@ -123,7 +120,7 @@ involve in this work
 
 <details>
     <summary>Creating PRs</summary>
-    You can submit a PR for the following,
+    You can submit a PR for,
     <ul>
         <li>Bug fixes</li>
         <li>Improvements</li>
