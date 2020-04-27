@@ -1,8 +1,8 @@
 <p align='center'>
-  
-  <img src='https://user-images.githubusercontent.com/34127015/68472955-b7ee4200-0247-11ea-91b6-6f81b570b31d.png' alt='Timers4TFM'> 
+
+  <img src='https://user-images.githubusercontent.com/34127015/68472955-b7ee4200-0247-11ea-91b6-6f81b570b31d.png' alt='Timers4TFM'>
   <h1>Timers4TFM</h1>
-  
+
 </p>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
