@@ -19,8 +19,7 @@
 
 ## What is this?
 
-**A library which provides easy and advanced timers for module
-developers.**
+**A library which provides easy and advanced timers for module developers.**
 
 This project is inspired by
 [mk's timer library](https://atelier801.com/topic?f=6&t=875052), make sure to
@@ -28,8 +27,9 @@ support that project too :heart:
 
 **_Background_**
 
-As normal players - who aren't in module team - aren't allowed to use the Module API's timers (`system.newTimer` and `system.removeTimer`), I decided to
-create a brand new, advanced timer system for the benefit of all!
+As normal players - who aren't in module team - aren't allowed to use the Module
+API's timers (`system.newTimer` and `system.removeTimer`), I decided to create a
+brand new, advanced timer system for the benefit of all!
 
 **_There are many capabilities for these timers_**
 
@@ -42,8 +42,7 @@ create a brand new, advanced timer system for the benefit of all!
 
 ## How to use?
 
-To use this library you need to insert this libraries code in top of
-your code.
+To use this library you need to insert this libraries code in top of your code.
 
 [Use the full code _(Recommended for studying)_](https://raw.githubusercontent.com/Seniru/Timers4TFM/master/src/timer.lua)
 |
